@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-7723544-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-7723544-8');
+</script>
+
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+<meta name="msapplication-TileColor" content="#1a1919">
+<meta name="msapplication-TileImage" content="https://cdn-shop.adafruit.com/static/mstile-144x144.png" />
+<title>Contributing - Open Issues</title>
+<meta name="description" content="The easiest way to program microcontrollers" />
+
+<!-- Twitter and Open Graph cards -->
+<meta name="twitter:site" content="@circuitpython" />
+<meta property="og:url" content="https://circuitpython.org/contributing/open-issues" />
+
+<meta property="og:title"   content="CircuitPython - Contributing - Open Issues" />
+
+
+
+<meta property="og:description" content="The easiest way to program microcontrollers" />
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta property="og:image" content="https://circuitpython.org/assets/images/CircuitPythonLogo_Black.png" />
+
+<meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="https://circuitpython.org/contributing/open-issues">
+  <!-- CircuitPython RSS Feed -->
+  <link rel="alternate"
+        type="application/rss+xml"
+        title="CircuitPython news!"
+        href="https://blog.adafruit.com/category/circuitpython/feed/"/>
+  <link rel="alternate" type="application/rss+xml" title="Latest Boards" href="/feed.rss"/>
+  <script src="/assets/javascript/header_mobile.js"></script>
+</head>
+
+
+  <body>
+    <header id="site-header">
+  
+  <nav class="top-navigation">
+    <div>
+      <div class="navigation">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+        <a class='active' href="/contributing">Contributing</a>
+        <a href="https://blog.adafruit.com/category/circuitpython">News</a>
+        <a  href="/awesome">Awesome</a>
+        <a href="https://www.adafruitdaily.com/category/circuitpython">Newsletter</a>
+        <a href="https://circuitpython.readthedocs.io/">API</a>
+        <a href="https://forums.adafruit.com/viewforum.php?f=60">Help</a>
+        <span>
+            <a href="https://adafru.it/discord" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="/feed.rss" type="application/rss+xml" aria-label="RSS Feed"><i class="fas fa-rss-square"></i></a>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <div class="wrapper">
+    <div class="content">
+      <nav class="site-brand">
+        <div class="site-logo">
+          <a href="/">
+            <img src="/assets/images/logo.png"
+                 srcset="/assets/images/logo.png 1x,
+                         /assets/images/logo@2x.png 2x,
+                         /assets/images/logo@3x.png 3x"
+                                         alt="CircuitPython Logo"
+                                         height="60" width="136">
+          </a>
+        </div>
+        <div class="site-navigation">
+          <a  href="/downloads">Downloads</a>
+          <a  href="/libraries">Libraries</a>
+          <a  href="/blinka">Blinka</a>
+        </div>
+        <div class="get-started">
+          <a href="https://learn.adafruit.com/welcome-to-circuitpython">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom-bar"></div>
+</header>
+
+    <header id="mobile-header">
+  <div class="header-contents">
+    <div class="site-logo">
+      <a href="/">
+        <img src="/assets/images/logo.png"
+              srcset="/assets/images/logo.png 1x,
+                      /assets/images/logo@2x.png 2x,
+                      /assets/images/logo@3x.png 3x"
+                                      alt="CircuitPython Logo"
+                                      height="60" width="136">
+      </a>
+    </div>
+    <div id="mobile-menu">
+      <div class="menu-toggle">
+        <a href="#" id="mobile-menu-button">
+          <span class="sr-only">Open Mobile Menu</span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <nav id="mobile-menu-contents" role="navigation" class="hidden"
+      aria-expanded="false" aria-label="Mobile Menu">
+      <ul>
+        <li><a 
+                                  href="/downloads">Downloads</a></li>
+        <li><a 
+                                  href="/libraries">Libraries</a></li>
+        <li><a 
+                                  href="/blinka">Blinka</a></li>
+        <li><a class='active'
+                                  href="/contributing">Contributing</a></li>
+        <li><a href="https://blog.adafruit.com/category/circuitpython">News</a></li>
+        <li><a 
+                                  href="/awesome">Awesome</a></li>
+        <li><a href="https://www.adafruitdaily.com/category/circuitpython">Newsletter</a></li>
+        <li><a href="https://learn.adafruit.com/welcome-to-circuitpython">Get Started</a></li>
+        <li><a href="https://forums.adafruit.com/viewforum.php?f=60">Help</a></li>
+        <li><a href="https://adafru.it/discord">Discord</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="bottom-bar"></div>
+</header>
+
+
+    <div id="main-content" class="wrapper">
+      <!-- https://github.com/adafruit/circuitpython/issues/1246 -->
+<div id="libraries-page" class="common-layout">
+  <div class="content">
+    <h1>Contributing</h1>
+    <p>
+      If you'd like to contribute to the CircuitPython project, the CircuitPython
+      libraries are a great way to begin. This page is updated with daily status
+      information from the CircuitPython libraries, including open pull requests,
+      open issues and library infrastructure issues.
+    </p>
+    <p>
+      Do you write a language other than English? Another great way to contribute
+      to the project is to contribute new localizations (translations) of
+      CircuitPython, or update current localizations, using
+      <a href="https://hosted.weblate.org/engage/circuitpython/">Weblate</a>.
+    </p>
+    <p>
+      If this is your first time contributing, or you'd
+      like to see our recommended contribution workflow, we have a guide on
+      <a href="https://learn.adafruit.com/contribute-to-circuitpython-with-git-and-github">Contributing to CircuitPython with Git and Github</a>.
+      You can also find us in the #circuitpython channel on the
+      <a href="https://adafru.it/discord">Adafruit Discord</a>.
+    </p>
+    <p>
+      Have an idea for a new driver or library?
+      <a href="https://github.com/adafruit/circuitpython/issues">File an issue on the CircuitPython repo!</a>
+    </p>
+    <h2>Current Status for Wed, Jun 09, 2021</h2>
+
+    
+    <ul class='tabbed-navigation'>
+      <li>
+        <a href="/contributing" >Pull Requests</a>
+      </li>
+      <li>
+        <a href="/contributing/open-issues" class='active'>Open Issues</a>
+      </li>
+      <li>
+        <a href="/contributing/library-infrastructure-issues" >Library Infrastructure Issues</a>
+      </li>
+      <li>
+        <a href="/contributing/weblate" >CircuitPython Localization</a>
+      </li>
+    </ul>
+    <div class="clear"></div>
+    <div class="libraries open-issues">
+  
+  
+  
+  <p>
+    Sort by issue labels
+    <select>
+      
+        <option value='all'>All</option>
+      
+        <option value='none'>None</option>
+      
+        <option value='bug'>Bug</option>
+      
+        <option value='enhancement'>Enhancement</option>
+      
+        <option value='documentation'>Documentation</option>
+      
+        <option value='question'>Question</option>
+      
+        <option value='good-first-issue'>Good first issue</option>
+      
+        <option value='support'>Support</option>
+      
+        <option value='help-wanted'>Help wanted</option>
+      
+        <option value='duplicate'>Duplicate</option>
+      
+        <option value='needs-retest'>Needs retest</option>
+      
+    <select>
+  </p>
+  <h3>Open Issues</h3>
+  <ul>
+    
+      <li>
+        Adafruit_CircuitPython_ADS1x15
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ADS1x15/issues/60">ad1115 totally weird values when overlay ad1115 is not loaded (Open 240 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_AHTx0
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_AHTx0/issues/8">Accuracy on FunHouse? (or temp compensation of RH via dew point?) (Open 12 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_AM2320
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_AM2320/issues/18">strange discontinuity between 31 and 33 degrees C? (Open 369 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_APDS9960
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_APDS9960/issues/24">integration_time equation possibly incorrect (Open 400 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_APDS9960/issues/23">gesture_proximity_threshold default causes prox value to lock at 51 (Open 400 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_APDS9960/issues/17">integration_time property uses raw sensor values and differs to C/Arduino library (Open 461 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_ATECC
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ATECC/issues/22">nonce function does not generate a nonce (Open 68 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ATECC/issues/21">random function is not generating random numbers (Open 68 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ATECC/issues/7">Implement atcab_write_pubkey and atcab_priv_write commands (Open 587 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_AzureIoT
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_AzureIoT/issues/26">Add support for IoT Central components (Open 123 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_AzureIoT/issues/21">Tracking dependency changes for ESP32-S2 and CP6 (Open 288 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_AzureIoT/issues/20">Add support for X.509 certificates (Open 334 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BitbangIO
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BitbangIO/issues/16">Clock Stretching not currently supported (Open 136 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Bitmap_Font
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Bitmap_Font/issues/10">TTF support (Open 754 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BLE
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/120">Can't use multiprocessing on the BLE connections to retrieve data from multipe devices at the same time (Open 91 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/114">Does advertising.standard.ManufacturerDataField.field_names currently serve a purpose? (Open 162 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/109">High CPU usage with BLEUART (Open 198 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/104">soft device error: 0004 when paring with BLE HID peripheral (Open 265 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/96">ComplexCharacteristic does not pass fixed_length instance variable to _bleio.Characteristic.add_to_service (Open 320 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/94">Receiving >20 bytes at once from Bluefruit Connect app not working (Open 343 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/91">CircuitPython Locks Up on Disconnect (Open 349 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/86">A custom Advertisement with a constructor can fail to parse incoming BLE data correctly (Open 376 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/85">Implement __eq__ for Advertisement (Open 376 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/84">BLE keyboard or mouse as input (Open 390 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/83">Expose ADAFRUIT_COMPANY_ID and MANUFACTURING_DATA_ADT (Open 390 days)</a></li>
+        
+        
+        <li class="documentation"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/79">More thorough documentation (Open 418 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/42">Wrap _bleio exceptions which might get thrown to user code (Open 546 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/41">Add Advertisement length checking. (Open 550 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE/issues/37">UARTService: allow setting of buffer sizes, timeouts, and UUID (Open 555 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BLE_Adafruit
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_Adafruit/issues/10">ble_adafruit_simpletest_client.py seems to stuck on a value (Open 284 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BLE_Apple_Media
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_Apple_Media/issues/8">Issue With Apple Media Service Library (Open 249 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_Apple_Media/issues/3">Picking new tracks in Music and Podcast apps cause error (Open 504 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BLE_BerryMed_Pulse_Oximeter
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_BerryMed_Pulse_Oximeter/issues/8">Can't use multiprocessing on the BLE connections to retrieve data from multipe devices at the same time (Open 91 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_BerryMed_Pulse_Oximeter/issues/3">Raspberry Pi 4 "Service Discovery Error"   (Open 310 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BLE_BroadcastNet
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_BroadcastNet/issues/20">Fails to find advertisement on nRF52 (Open 50 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_BroadcastNet/issues/13">Missing sound level (exist in CPB) (Open 328 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_BroadcastNet/issues/11">Bluetooth LE Sensor Nodes to Raspberry Pi WiFi Bridge - Stuck at scanning (Open 349 days)</a></li>
+        
+        
+        <li class="documentation"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_BroadcastNet/issues/9">Clarification on broadcast_time arg for broadcast() (Open 368 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_BroadcastNet/issues/7">Possible type bugs for wire types in AdafruitSensorMeasurement (Open 390 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_BroadcastNet/issues/2">Add ChaCha support for basic security (Open 468 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BLE_Eddystone
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_Eddystone/issues/6">Please add (unencrypted) TLM data. (Open 416 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_Eddystone/issues/2">add error message for long URLs (Open 474 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BLE_File_Transfer
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_File_Transfer/issues/9">Add filesystem size info (Open 0 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_File_Transfer/issues/7">Add recursive delete (Open 29 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_File_Transfer/issues/6">Add busy state (Open 29 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_File_Transfer/issues/5">Add Format (Open 29 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_File_Transfer/issues/4">Add Move (Open 29 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_File_Transfer/issues/3">Add Copy (Open 29 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BLE_MIDI
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_MIDI/issues/2">Simultaneous MIDI BLE notes not played. (Open 423 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BLE_Radio
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_Radio/issues/13">Run tests in Actions (Open 284 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BLE_Radio/issues/11">Bluefruit Playground advertisements and Radio advertisements both using id 1 (Open 418 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BluefruitConnect
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BluefruitConnect/issues/23">Pinout query returns 'Assuming Arduino Uno' (Open 283 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BluefruitConnect/issues/16">Missing image_packet.py (Open 510 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BluefruitSPI
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BluefruitSPI/issues/9">read_packet needs to check for leftover data in self._buffer (Open 913 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BluefruitSPI/issues/8">ATI command works ok but errors when debug is used - gives Error (id:0xa180) (Open 913 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BluefruitSPI/issues/4">HID example code (Open 946 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BME280
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BME280/issues/37">Minor reduction in memory footprint to make library more viable with adafruit_rfm9x on M0 processors  (Open 361 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BME280/issues/23">Align code in this library to Adafruit code for ESP32, ESP8266, etc. (Open 772 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BME680
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BME680/issues/29">Adafruit library shows different values than BSEC library (Open 433 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BNO055
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO055/issues/72">Magnetometer may not be returning the correct data (Open 77 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO055/issues/71">Reading time too long (Open 134 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO055/issues/67">Raspberry Pi erroneous data (Open 158 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO055/issues/66">Re-using calibration data (Open 180 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO055/issues/65">Initialisation fails due to reset in __init__. (Open 181 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO055/issues/62">Library too large for smaller boards (Open 211 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO055/issues/58">-92 degrees celsius randomly returned from imu's temperature field (Open 229 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BNO08x
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO08x/issues/20">SPI class limited to boards with internal pull ups (Open 67 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO08x/issues/18">Duplicate code in library files - potential refactor needed  (Open 96 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO08x/issues/7">Intermittant communications issues on i2c (Open 220 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BNO08x_RVC
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BNO08x_RVC/issues/1">uart buffering (Open 175 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_BusDevice
+        <ul class="issues-list">
+        
+        
+        <li class="question"><a href="https://github.com/adafruit/Adafruit_CircuitPython_BusDevice/issues/66">Bus Device version '0.0.0-auto.0' (Open 1 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_CharLCD
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_CharLCD/issues/55">Message draw slow compared to legacy library (Adafruit_CharLCDPlate) (Open 136 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_CharLCD/issues/36">MemoryError on Metro M0 Express (Open 803 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_CircuitPlayground
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_CircuitPlayground/issues/103">Capacitive touch iterable attribute (Open 76 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_CircuitPlayground/issues/76">sound_meter example fails on Circuit Playground Bluefruit (Open 539 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_CircuitPlayground/issues/49">Sine wave may be rather quiet - add option to change to square wave (Open 803 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_CLUE
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_CLUE/issues/41">Capacitive touch iterable attribute (Open 76 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Crickit
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Crickit/issues/13">Add rotary encoder support? (Open 897 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_DHT
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/69">Initialization error? (Open 70 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/67">Overflow Error After Querying Sensor Every 2 Seconds for ~2 Hours (Open 82 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/66">DHT11 not working properly (Open 84 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/65">DHT22 not working on Raspberry Pi wh  (Open 96 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/60">DHT22 reports wrong negative temperatures  (Open 128 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/53">DHT (DHT11) not working on FeatherS2 board (Open 205 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/52">OverflowError in adafruit_dht.py line 137: pulses.append(self.pulse_in.popleft()) (Open 223 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/51">libgpiod_pulsein is armhf 32-bits, doesn't work on 64-bits OS (Open 238 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/50">After some time of regular querying (~hours), libgpiod_pulsein starts using 100% CPU and subsequent readings fail (Open 269 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/49">DHT sensor not found, check wiring (Open 271 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/43">ValueError: Object has been deinitialized and can no longer be used. (Open 417 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/40">DHT22 report null after a while (Open 442 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/33">A full buffer was not returned.  Try again. (Open 480 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DHT/issues/27">Unable to set line 4 to input (Open 559 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Display_Text
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Display_Text/issues/131">Update label to use new displayio.Group (Open 92 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_DisplayIO_Layout
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DisplayIO_Layout/issues/19">`Control` class: Common response function names (Open 83 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DisplayIO_Layout/issues/1">Suggestions based on current status. (Open 132 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_DisplayIO_SSD1306
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DisplayIO_SSD1306/issues/20">0.49" 64 x 32 pixel module output error (Open 53 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_DRV2605
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_DRV2605/issues/15">Maybe use all the sequence slots? (Open 810 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_ESP32SPI
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/135">UDP send() does not clear esp32 write buffer (Open 49 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/134">Only allows one TLS connection at a time (Open 55 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/133">esp.disconnect leaves the ESP32 in a bad state (Open 61 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/121">__init__ arguments are not Pins (Open 162 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/120">Documentation on status LED? (Open 164 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/109">parse_header Error trying to import adafruit_esp32spi.adafruit_esp32spi_wsgiserver (Open 249 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/108">ESP_SPIcontrol._wait_for_ready is eating lots of time polling the READY/BUSY pin (Open 252 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/102">No recovery after Timed out waiting for SPI char (Open 342 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/100">Add a reconnect method to the WiFi manager (Open 371 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/94">adafruit_esp32spi_socket.py:readline hardcoded end of line marker (Open 440 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/83">Request to include datagram type for sockets  (Open 563 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/63">Radio and Connection Sleep/Reopen (Open 665 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/55">Implement socket.socket.recv_into (Open 720 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI/issues/9">json error in get (Open 839 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_ESP_ATcontrol
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP_ATcontrol/issues/20">MAC addr reading (Open 872 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ESP_ATcontrol/issues/14">Request: Sleep/Deep Sleep (Open 889 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Fingerprint
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Fingerprint/issues/31">Rename template upload/download to R503 specific (Open 87 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Fingerprint/issues/30">template_compare fails on PID4750 (Open 91 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Fingerprint/issues/29">Getting incorrect packet data when uploading image (Open 103 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_FRAM
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_FRAM/issues/26">Change multi-byte write to use slice notation (Open 86 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_GC_IOT_Core
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement
+          
+            good-first-issue"><a href="https://github.com/adafruit/Adafruit_CircuitPython_GC_IOT_Core/issues/3">Change publish kwarg order to match other MiniMQTT API libraries (Open 608 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Gizmo
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Gizmo/issues/16">Update requirements? (Open 36 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_GPS
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_GPS/issues/63">GPS accuracy and float precision (Open 43 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_HCSR04
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_HCSR04/issues/22">Many failed distance reedings "Retrying" before a valid distance value comes up (Open 153 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_HID
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_HID/issues/71">Fix gamepad examples (Open 10 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_HID/issues/67">Pico keyboard is not "quite" a real keyboard? (Open 34 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_HID/issues/53">Refactor KeyboardLayoutUS to allow other layouts without duplicating code (Open 293 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_HID/issues/34">support for 16bit values in the gamepad module (Open 772 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_HT16K33
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_HT16K33/issues/81">Keypad Functionality (Open 217 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_HT16K33/issues/79">No LOL'ing with 7x4 Segment (Open 264 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_HT16K33/issues/75">Add the animate() function from the example to the library. (Open 438 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_HT16K33/issues/74">Add Multiple Display Support for 7-Segment, Alphanumeric, and Matrix Displays (Open 439 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_HT16K33/issues/67">8-digit seven segment display (Open 459 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_IL0373
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IL0373/issues/11">Black border around the edge of the display (Open 402 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_ILI9341
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ILI9341/issues/26">Make it easy to set MADCTL for rotation (Open 5 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_ImageLoad
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ImageLoad/issues/50">Remove readinto() fallback when new release of CircuitPython is available (Open 79 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ImageLoad/issues/44">Add buffer option for storing bitmaps to prevent out memory due to fragmentation. (Open 90 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_IRRemote
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IRRemote/issues/44">Support Sony codes (Open 72 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IRRemote/issues/40">NEC one/zero codes reversed (Open 216 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IRRemote/issues/39">Last value showing up divided by 2 (Open 278 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IRRemote/issues/32">read_pulses() still blocks (Open 465 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IRRemote/issues/26">Add feature to encode and decode MakeCode's infrared pulses (Open 735 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IRRemote/issues/16">implement timeout in read_pulses() (Open 1022 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_IS31FL3731
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IS31FL3731/issues/43">Do you prefer a lookup table or an algorithm? + duplicate code (Open 86 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IS31FL3731/issues/33">Convert to Bus Device (Open 212 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IS31FL3731/issues/30">Consider adding lightness curve correction to some examples (Open 342 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_IS31FL3731/issues/28">Pimoroni LED shim class should be PixelBuf (Open 427 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_LC709203F
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LC709203F/issues/3">simpletest fails on Feather nRF52840. (Open 225 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_LED_Animation
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LED_Animation/issues/80">Addressing multiple 8x8 panels (Open 17 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LED_Animation/issues/79">Repository still uses `master` (Open 22 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LED_Animation/issues/77">Add an example showing how to use buttons to interrupt or cycle (Open 38 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LED_Animation/issues/76">precompute_rainbow=False causes an error in rainbow.py (Open 42 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LED_Animation/issues/74">Reverse setting in Comet not working (Open 169 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LED_Animation/issues/65">Updating brightness mid-animation (Open 271 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LED_Animation/issues/53">adafruit_led_animation (Open 351 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LED_Animation/issues/43">Gradient Animation Request (Open 361 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LED_Animation/issues/37">Background color (or fade-to color) for Chase and Comet (Open 367 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LED_Animation/issues/34">Neighboring pixels feature (Open 375 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_LIDARLite
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LIDARLite/issues/14">Measurement Faliure (Open 88 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_LIS331
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LIS331/issues/2">Odd readings with H3LIS331 (Open 85 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_LPS35HW
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LPS35HW/issues/7">Negative temperature unsigned integer issue (Open 169 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_LSM303DLH_Mag
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LSM303DLH_Mag/issues/12">Adding a tilt-compensated compass example (Open 67 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_LSM6DS
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LSM6DS/issues/39">Duplicate code in library files - potential refactor needed (Open 96 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LSM6DS/issues/32">Missing data read flag (Open 157 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LSM6DS/issues/17">SPI support? (Open 372 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LSM6DS/issues/15">Memory Allocation issue on M0, others? (Open 403 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LSM6DS/issues/5">Add shake? (Open 469 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_LSM9DS1
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LSM9DS1/issues/26">Sample rate for accelerometer? (Open 188 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LSM9DS1/issues/24">Looking for burst data from LSM9DS1 (Open 258 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_LTR390
+        <ul class="issues-list">
+        
+        
+        <li class="question"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LTR390/issues/7">MemoryError: memory allocation failed while using adafruit_circuitplayground.express (Open 16 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_LTR390/issues/6">Not initing on ESP32-S2 (Open 41 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MagTag
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MagTag/issues/62">MAGTAG NEOPIXEL fails with 7.0 (Open 6 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MAX31855
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MAX31855/issues/23">Failure to read data yields a 0 instead of error or NoneType (Open 68 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MAX31865
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MAX31865/issues/31">Example code not working (Open 41 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MAX31865/issues/28">setters not working (Open 63 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MAX7219
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MAX7219/issues/28">using example, AttributeError: 'module' object has no attribute 'Matrix8x8' (Open 168 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MCP230xx
+        <ul class="issues-list">
+        
+        
+        <li class="support"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MCP230xx/issues/42">No Output (Open 28 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MCP230xx/issues/36">interrupt-on-change feature by setting INTCON register not working  (Open 155 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MCP2515
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MCP2515/issues/5">Not compatible with Circuitpython built w/o long support (Open 161 days)</a></li>
+        
+        
+        <li class="help-wanted"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MCP2515/issues/3">Possible addition? (Open 163 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MCP3xxx
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MCP3xxx/issues/34">spi1 instead of spi0 (Open 68 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MCP3xxx/issues/30">Use GPIO7 (CE1) (Open 225 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MCP4728
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MCP4728/issues/7">Set I2C address bits via LDAC (Open 109 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MCP9600
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MCP9600/issues/10">**VERY** unstable and erratic readings with temps over 537C-760C (1,000F - 1,400F) (Open 472 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MIDI
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MIDI/issues/23">MIDI Continue message is missing (Open 420 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MIDI/issues/28">Traceback from exceptions accumulates on REPL on 4.1.0 (Open 666 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MIDI/issues/10">Implement a reference for the well known MIDI controller values (Open 799 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MIDI/issues/8">Add support for MIDI running status (Open 802 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MIDI/issues/7">MIDI UART support (Open 819 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MIDI/issues/4">Work out best way to handle reading large SysEx messages (Open 833 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_miniesptool
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_miniesptool/issues/27">PyPortal Pynt ESP firmware update issue (Open 39 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MiniMQTT
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MiniMQTT/issues/81">Getting trapped in publish? (Open 41 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MiniMQTT/issues/64">Add test suite (Open 125 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MiniMQTT/issues/52">ModuleNotFoundError: No module named 'adafruit_minimqtt' (Open 199 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MiniMQTT/issues/10">Implement exponential backoff/retry for reconnections (Open 608 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MLX90640
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MLX90640/issues/22">Adafruit mlx90640_camtest.py example does a "black screen" in RPi4 (Open 194 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Motor
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Motor/issues/43">Add support for digital pin control when not microstepping steppers. (Open 400 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Motor/issues/41">Add method to manually set pulse width (Open 404 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MotorKit
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MotorKit/issues/32">Stepper Motor Speed Limitations (Open 254 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MPU6050
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MPU6050/issues/18">Feature request: read from onboard DMP (Open 12 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_MS8607
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_MS8607/issues/3">Not working on small int boards (Open 250 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_NeoPixel
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel/issues/104">Please document root-less RPi usage (Open 104 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel/issues/101">Breaking change somewhere in recent Raspberry Pi OS update (Open 137 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel/issues/98">neopixel_cleanup should be called on deinit() (Open 178 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel/issues/97">Set pixels using slice with single color / multiple colors (Open 188 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel/issues/52">tuple rgb value reported to be slower than list (Open 621 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_NeoPixel_SPI
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel_SPI/issues/29">Neopixels overwrite when executed from .Net application   (Open 49 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel_SPI/issues/26">Neopixel timing issue with SPI1 on Raspberry Pi? (Open 163 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel_SPI/issues/24">NeoPixel LED strip stopped working on nvidia NX board (Open 182 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_NeoTrellis
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NeoTrellis/issues/14">Interrupt not implemented for Python (Open 63 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_NTP
+        <ul class="issues-list">
+        
+        
+        <li class="documentation"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NTP/issues/17">tz_offset is incorrectly documented in the code and documentation (Open 53 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_NTP/issues/16">Dependence on adafruit_esp32spi (Open 133 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Nunchuk
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Nunchuk/issues/12">Return acceleration as meter per second per second (Open 196 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_OAuth2
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_OAuth2/issues/4">Checking compatibility with service_account (Open 118 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_PCA9685
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PCA9685/issues/38">No control of MODE2 register (Open 53 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PCA9685/issues/29">Friendly error message to catch and avoid ZeroDivisionError (Open 359 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_PIOASM
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PIOASM/issues/23">Examples failing actions (Open 20 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PIOASM/issues/21">Example pwm.pio re-implementation not working (Open 63 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PIOASM/issues/16">.side_set N opt is not currently implemented (Open 80 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_PM25
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PM25/issues/15">Install on Raspberry pi 3B+ running Manjaro linux fails (Open 101 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PM25/issues/9">UART fails to operate with PMS5003 (Open 274 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_PN532
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PN532/issues/46">Cannot found mifare card using UART (Open 117 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PN532/issues/44">get_passive_target is asking for more data from the UART than is provided, so we are blocking (Open 153 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PN532/issues/43">How can I make read_passive_target wait indefinitely until a tag becomes available? (Open 247 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_PortalBase
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PortalBase/issues/23">MagTag Project Selector (Open 83 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_ProgressBar
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ProgressBar/issues/26">Add support for anchoring (Open 108 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ProgressBar/issues/10">ProgressBar could use less memory, operate more efficiently (Open 322 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_PyBadger
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PyBadger/issues/42">Duplicate code in library files - potential refactor needed (Open 99 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_PYOA
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PYOA/issues/21">fix for 6.x (Open 148 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_PyPortal
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_PyPortal/issues/114">PyPortal mqtt integration with UI example (Open 35 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_RA8875
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_RA8875/issues/24">The arguments for set_window in RA8875Display class do not work as described. (Open 79 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Register
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Register/issues/43">Feature request: be able to indicate a register needs to be set/read byte-by-byte. (Open 84 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Requests
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Requests/issues/75">Certain Feather RP2040 (ESP32SPI) chunked responses fail (Open 79 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Requests/issues/69">Separating Requests from Responses (Open 127 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Requests/issues/66">using sockets as dict keys (Open 129 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Requests/issues/62">Setting up requests repeatedly (3 times) results in runtime error (Open 139 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Requests/issues/40">Breaking change in 1.7.0: Header keys are now capitalized (Open 242 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Requests/issues/38">Support responses without Content-Length (Open 247 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Requests/issues/37">syntax error in JSON when using adafruit_io for fetching data from AIO (Open 249 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_RFM9x
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_RFM9x/issues/55">Add FSK/OOK compatibility to Driver (Open 177 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_RFM9x/issues/50">No RH Mesh adaptation (Open 237 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_RFM9x/issues/38">Clarify the 4 bytes added to the beginning of each buffer (Open 473 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_RFM9x/issues/17">Receiving garbage data  (Open 825 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_RGB_Display
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_RGB_Display/issues/94">minor write() optimization (Open 25 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_RGB_Display/issues/81">SSD1357 (Open 387 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_RTTTL
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_RTTTL/issues/12">Loudness vary greatly depending on the tone (Open 785 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_SCD30
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_SCD30/issues/16">Refinement to altitude vs ambient_pressure in documentation (Open 37 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_SCD30/issues/13">Datasheet mentions 3ms delays in i2c communication (Open 49 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_SD
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_SD/issues/37">Compatibility Circuitpy/Computer (Open 239 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_SD/issues/34">Doesn't properly detect capacity >32GB (Open 383 days)</a></li>
+        
+        
+        <li class="bug
+          
+            help-wanted"><a href="https://github.com/adafruit/Adafruit_CircuitPython_SD/issues/8">Trouble detecting when card has been removed (Open 1092 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_seesaw
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_seesaw/issues/67">Product ID 4991 (I2C rotary encoder) (Open 17 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_seesaw/issues/53">seesaw_crickit_test.py fails with Invalid touch pin (Open 263 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_seesaw/issues/49">neopixel.brightness does not take effect with auto_write or show() (Open 451 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_seesaw/issues/31">Digital Write for LED and other Pins (Open 765 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_ServoKit
+        <ul class="issues-list">
+        
+        
+        <li class="question"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ServoKit/issues/30">can't release servo's after using them (Open 25 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_ServoKit/issues/24">Angle-Servo Moves but Continuous servo motor doesn't move (Open 236 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_SGP40
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_SGP40/issues/2">VOC algorithm (Open 151 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_SharpMemoryDisplay
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_SharpMemoryDisplay/issues/15">PIL draw.text() MUCH slower than display.text() (Open 260 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Slideshow
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Slideshow/issues/23">Allow other things to use the Display also (Open 213 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_SSD1306
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_SSD1306/issues/28">I2C: garbage output on DragonBoard410c (Open 685 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_SSD1327
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_SSD1327/issues/8">The driver for the ssd1327 is not on pypi (Open 192 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_STMPE610
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_STMPE610/issues/16">Device reset during initialization causes trouble (Open 79 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_TCA9548A
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_TCA9548A/issues/33">While accesing sensors on the RP2040 give results that are not as expected when not using the REPL (Open 14 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_TCA9548A/issues/31">Bug : Channel Switch Missing in TCA9548A_Channel.scan (Open 33 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_TCA9548A/issues/30">software reset (Open 33 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_TCA9548A/issues/29">TCA library deadlocks when i2c device fails  (Open 69 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_TCA9548A/issues/28">Allow manual muxing? (Open 75 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_TCS34725
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_TCS34725/issues/33">Integration time and response time (Open 267 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_TCS34725/issues/30">Problems with jumping values between two levels (Open 412 days)</a></li>
+        
+        
+        <li class="enhancement
+          
+            good-first-issue"><a href="https://github.com/adafruit/Adafruit_CircuitPython_TCS34725/issues/18">Need better RGB color implementation. (Open 904 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Thermal_Printer
+        <ul class="issues-list">
+        
+        
+        <li class="question"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Thermal_Printer/issues/24">printer encoding CP437 (Open 13 days)</a></li>
+        
+        
+        <li class="duplicate"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Thermal_Printer/issues/23">'J' character added to print jobs and new lines (Open 126 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Thermal_Printer/issues/16">add ability to print image (Open 426 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_TinyLoRa
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_TinyLoRa/issues/37">Feature Request: Downlink (Open 127 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_turtle
+        <ul class="issues-list">
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_turtle/issues/1">Future example or project (Open 721 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_VL53L0X
+        <ul class="issues-list">
+        
+        
+        <li class="needs-retest"><a href="https://github.com/adafruit/Adafruit_CircuitPython_VL53L0X/issues/27">Issue with implementation of VL53L0X and TCA9548A multiplexer (Open 105 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_VL53L0X/issues/22">Cannot turn vl53l0x on after shutdown (Open 328 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_VL53L0X/issues/19">No continuous Mode (Open 389 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_VL6180X
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_VL6180X/issues/18">Internal constant missing - Sys Range Offset (Open 6 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_VS1053
+        <ul class="issues-list">
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_VS1053/issues/11">RFC Any interest in collaborating? (Open 403 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_Wiznet5k
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Wiznet5k/issues/33">Wiznet5k incompatible with recent Requests releases (Open 74 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Wiznet5k/issues/24">DNS lookup fails on CNAME records (Open 257 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_Wiznet5k/issues/19">DNS resolv subdomain, Adafruit CircuitPython 5.3.0 on 2020-04-29 (Open 381 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_WS2801
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_WS2801/issues/20">Trouble migrating from Adafruit_WS2801.WS2801Pixels (Open 89 days)</a></li>
+        
+        
+        <li class="bug"><a href="https://github.com/adafruit/Adafruit_CircuitPython_WS2801/issues/8">Using hardware SPI on Feather M4 doesn't appear to work (Open 585 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        Adafruit_CircuitPython_WSGI
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/Adafruit_CircuitPython_WSGI/issues/7">Allow CORS by handling OPTIONS requests (Open 208 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_WSGI/issues/6">Add in support for static asset file serving (Open 385 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/Adafruit_CircuitPython_WSGI/issues/1">Design goals and milestones (Open 679 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        CircuitPython_Community_Bundle
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/CircuitPython_Community_Bundle/issues/69">BetterPad: An easy-to-use wrapper over GamePadShift (Open 52 days)</a></li>
+        
+        
+        <li class="good-first-issue"><a href="https://github.com/adafruit/CircuitPython_Community_Bundle/issues/67">Libraries List Page (Open 71 days)</a></li>
+        
+        </ul>
+      </li>
+    
+      <li>
+        cookiecutter-adafruit-circuitpython
+        <ul class="issues-list">
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/145">PyPI Credentials For New Library (Open 0 days)</a></li>
+        
+        
+        <li class="question"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/141">Community library - Code of Conduct (Open 18 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/123">jinja2.exceptions.TemplateSyntaxError: when running from msys2 (windows) (Open 66 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/122">Remove Adafruit Bus Device library dependency question & comments? (Open 69 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/121">pre-commit pylint checks are doing too much work (Open 78 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/119">(Nearly) replacing setup.py with pyproject.toml and setup.cfg (Open 84 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/118">pyproject.toml is breaking local `pip3 install -e` (Open 85 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/115">Double copyright lines (Open 90 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/101">Add "reuse" copyright and license templates (Open 127 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/83">Metadata Errors and Python Wheel Issue (Open 289 days)</a></li>
+        
+        
+        <li class="none"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/82">Git clone unsuccessful on Windows (Open 312 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/78">Add --diff to black command (Open 330 days)</a></li>
+        
+        
+        <li class="enhancement"><a href="https://github.com/adafruit/cookiecutter-adafruit-circuitpython/issues/66">Double check black config against MicroPython (Open 462 days)</a></li>
+        
+        </ul>
+      </li>
+    
+    </ul>
+</div>
+
+  </div>
+</div>
+
+<script src="/assets/javascript/contributing.js"></script>
+
+    </div>
+
+    <!-- Google Analytics -->
+    <!-- TODO -->
+    <!-- End Google Analytics -->
+
+  </body>
+
+</html>
